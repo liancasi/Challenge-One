@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+body{
+    background: rgb(199, 202, 222);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.contenido{
+    display: flex;
+    height: 100vh;
+    
+}
+
+
+h1{
+    text-align: center;
+}
+p{
+    color: black;
+}
+
+.cuadro-proceso{
+    text-align: center;
+    flex:2;
+    padding: 25px;
+    margin: 15px;
+
+}
+
+.cuadro-resultado{
+    border-radius: 25px;
+    height: 110%;
+    padding: 25px;
+    flex:1;
+    background-color: white;
+    text-align: center;
+   
+
+  
+
+}
+
+
+
+.input-texto{
+    width: 80%;
+    height: 100%;
+    text-align: unset;
+    padding: 25px;
+    border: white;
+    background: none;
+}
+
+
+.observacion-texto:before{
+    content: "❗";
+}
+
+.encriptar{
+    background: rgb(9, 9, 59);
+    color: white;
+    border-radius: 15px;
+    padding: 15px 50px;
+    margin: 30px auto;
+    
+}
+
+.desencriptar{
+    background: rgb(161, 161, 221);
+    border-radius: 15px;
+    padding: 15px 50px;
+    margin: 30px auto;
+}
+
+.encriptar:hover{
+    opacity: 0.5;
+}
+.desencriptar:hover{
+    opacity: 0.5;
+}
+
+.cuadro-resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ajusta este valor según sea necesario */
+    padding: 20px; /* Agrega un poco de espaciado interno */
+}
+
+.contenido-resultado {
+    flex-grow: 1;
+    /* Otros estilos para el contenido del texto encriptado */
+}
+
+
+.boton-copiar {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+.boton-copiar:hover {
+    background-color: #0052a3;
+}
+
+@media screen and (max-width: 480px) {
+   h1{
+    text-align: center;
+   }
+   p{
+    position: static;
+    
+   }
+    .texto, .container__botones, .boton-copiar, .contenido-resultado{
+        width: auto;
+        text-align: center;
+        font-size: 100%;
+    }
+    .boton-copiar{
+        position: absolute;
+        size: auto;
+    }
+  
+    .imagen-busqueda{
+        width: 100%;
+    }
+  }
